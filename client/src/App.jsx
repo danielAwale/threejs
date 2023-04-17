@@ -5,9 +5,11 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-       <h1 className="head-text">Three JS</h1>
-    </div>
+    <main className="app transition-all ease-in">
+       <Home />
+       <Canvas />
+       <Customizer />
+    </main>
   )
 }
 
