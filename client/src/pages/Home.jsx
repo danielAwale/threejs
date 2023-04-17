@@ -32,8 +32,11 @@ const Home = () => {
             </h1>
           </motion.div>
 
-          <motion.div>
-            <p>Create your unique and exclusive shirt with our brand new 3d customiuzation tool. <strong>Unleash your imagination</strong> and define your own style</p>
+          <motion.div
+            {...headContentAnimation}
+            className="flex flex-col gap-5"
+          >
+            <p className='max-w-md font-normal text-gray-600 text-base'>Create your unique and exclusive shirt with our brand new 3d customiuzation tool. <strong>Unleash your imagination</strong> and define your own style</p>
           </motion.div>
           
         </motion.div>
