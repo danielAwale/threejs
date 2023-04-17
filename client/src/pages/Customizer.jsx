@@ -9,7 +9,13 @@ import { downloadCanvasToImage, reader } from '../config/helpers';
 import { EditorTabs, FilterTabs, DecalTypes } from '../config/constants';
 import { fadeAnimation, slideAnimation } from '../config/motion';
 
-import { AIPicker, ColorPicker, FilePicker, Tab } from '../components';
+import {
+  AIPicker,
+  ColorPicker,
+  CustomButton,
+  FilePicker,
+  Tab,
+} from '../components';
 
 const Customizer = () => {
   const snap = useSnapshot(state);
@@ -29,6 +35,18 @@ const Customizer = () => {
                 ))}
               </div>
             </div>
+          </motion.div>
+
+          <motion.div
+            className="absolute z-10 top-5 right-5"
+            {...fadeAnimation}
+          >
+            <CustomButton
+              type="filled"
+              title="Go Back"
+              handleClick={() => (state.intro = true)}
+              customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+            />
           </motion.div>
         </>
       )}
