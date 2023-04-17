@@ -13,7 +13,15 @@ import { AIPicker, ColorPicker, FilePicker, Tab } from '../components';
 
 const Customizer = () => {
   const snap = useSnapshot(state);
-  <AnimatePresence>{!snap.intro && <>Customizer</>}</AnimatePresence>;
+  return (
+    <AnimatePresence>
+      {!snap.intro && (
+        <>
+          <h1>Hello Customizer</h1>
+        </>
+      )}
+    </AnimatePresence>
+  );
 };
 
 export default Customizer;
