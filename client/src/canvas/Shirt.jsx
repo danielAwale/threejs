@@ -7,6 +7,11 @@ import { Decal, useGLTF, useTexture } from '@react-three/drei';
 import state from '../store';
 
 const Shirt = () => {
+  const snap = useSnapshot(state);
+  //import a 3d model
+  const { nodes, materials } = useGLTF('/shirt_baked.glb');
+
+  //adding textures to the shirt
   return <div>Shirt</div>;
 };
 
