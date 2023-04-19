@@ -22,7 +22,9 @@ const Shirt = () => {
         material={materials.lambert1}
         material-roughness={1}
         dispose={null}
-      ></mesh>
+      >
+        {snap.isFullTexture && <Decal />}
+      </mesh>
     </group>
   );
 };
