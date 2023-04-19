@@ -14,7 +14,11 @@ const Shirt = () => {
   //adding textures to the shirt
   const logoTexture = useTexture(snap.logoDecal);
   const fullTexture = useTexture(snap.fullDecal);
-  return <group></group>;
+  return (
+    <group>
+      <mesh castShadow geometry={nodes.T_Shirt_male.geometry}></mesh>
+    </group>
+  );
 };
 
 export default Shirt;
