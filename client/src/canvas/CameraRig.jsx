@@ -8,6 +8,9 @@ import state from '../store';
 
 const CameraRig = ({ children }) => {
   const group = useRef();
+  const snap = useSnapshot(state);
+
+  // set the model rotation smoothly
   return <group ref={group}>{children}</group>;
 };
 
