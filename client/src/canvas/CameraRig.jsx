@@ -11,6 +11,7 @@ const CameraRig = ({ children }) => {
   const snap = useSnapshot(state);
 
   // set the model rotation smoothly
+  easing.dampE(group.current.rotation);
   return <group ref={group}>{children}</group>;
 };
 
