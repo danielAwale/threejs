@@ -2,12 +2,12 @@
 import React from 'react';
 import { useFrame } from '@react-three/fiber';
 import { easing } from 'maath';
-import { useSnapshop } from 'valtio';
+import { useSnapshot } from 'valtio';
 
 import state from '../store';
 
-const CameraRig = () => {
-  return <div>CameraRig</div>;
+const CameraRig = ({ children }) => {
+  return <group>{children}</group>;
 };
 
 export default CameraRig;
