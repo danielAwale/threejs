@@ -5,7 +5,11 @@ import { useFrame } from '@react-three/fiber';
 import { AccumulativeShadows, RandomizedLight } from '@react-three/drei';
 
 const Backdrop = () => {
-  return <div>Backdrop</div>;
+  return;
+  <AccumulativeShadows>
+    <RandomizedLight />
+    <RandomizedLight />
+  </AccumulativeShadows>;
 };
 
 export default Backdrop;
