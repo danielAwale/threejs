@@ -13,7 +13,8 @@ const Shirt = () => {
 
   //adding textures to the shirt
   const logoTexture = useTexture(snap.logoDecal);
-  return <div>Shirt</div>;
+  const fullTexture = useTexture(snap.fullDecal);
+  return <group></group>;
 };
 
 export default Shirt;
