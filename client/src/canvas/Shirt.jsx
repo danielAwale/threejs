@@ -12,6 +12,7 @@ const Shirt = () => {
   const { nodes, materials } = useGLTF('/shirt_baked.glb');
 
   //adding textures to the shirt
+  const logoTexture = useTexture(snap.logoDecal);
   return <div>Shirt</div>;
 };
 
