@@ -14,6 +14,10 @@ const Shirt = () => {
   //adding textures to the shirt
   const logoTexture = useTexture(snap.logoDecal);
   const fullTexture = useTexture(snap.fullDecal);
+
+  useFrame((state, delta) => {
+    easing.dampC(materials.lamber1.color, snap.color, 0.25, delta);
+  });
   return (
     <group>
       <mesh
@@ -37,6 +41,9 @@ const Shirt = () => {
             rotation={[0, 0, 0]}
             scale={0.15}
             map={logoTexture}
+            map-anistropy={16}
+            depthTest={false}
+            depthWrite={true}
           />
         )}
       </mesh>
