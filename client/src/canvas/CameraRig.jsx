@@ -23,6 +23,9 @@ const CameraRig = ({ children }) => {
       if (isMobile) targetPosition = [0, 0, 2.5];
       else targetPosition = [0, 0, 2];
     }
+
+    // set model camera position
+
     // set the model rotation smoothly
     easing.dampE(
       group.current.rotation,
